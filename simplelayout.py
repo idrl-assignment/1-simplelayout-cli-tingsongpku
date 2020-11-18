@@ -14,8 +14,10 @@ def main():
     if args.board_grid % args.unit_grid != 0:
         print("mod error")
         exit()
-    positions = args.positions.split(' ')  # --positions 1 4
+    positions = args.positions[:-1].split(' ')  # --positions 1 4
+    print(positions)
     if len(positions) != args.unit_n:
+        print("grid numbers error")
         exit()
     else:
         for pos in positions:
