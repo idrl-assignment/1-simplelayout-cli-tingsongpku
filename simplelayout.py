@@ -27,9 +27,9 @@ def main():
                 exit()
     if not os.path.exists(args.outdir):
         os.makedirs(args.outdir)
-    f = open('./%s/%s.mat' % (args.outdir, args.file_name), 'w')
+    f = open('%s/%s.mat' % (args.outdir, args.file_name), 'w')
     f.close()
-    f2 = open('./%s/%s.jpg' % (args.outdir, args.file_name), 'w')
+    f2 = open('%s/%s.jpg' % (args.outdir, args.file_name), 'w')
     f2.close()
 
 
